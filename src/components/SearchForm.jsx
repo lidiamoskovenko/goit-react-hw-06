@@ -12,7 +12,7 @@ const SearchForm = () => {
   const value = useSelector(state => state.filters);
   return (
     <div>
-      <label htmlFor={searchId}>Find contacts by name</label>
+      <label htmlFor={searchId}>Filter</label>
       <input
         type="text"
         name="search"
