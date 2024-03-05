@@ -1,6 +1,7 @@
 import { useId } from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { setFilter } from "../redux/filterSlice";
+import { setFilter } from "../../redux/filterSlice";
+import css from './SearchForm.module.css'
 
 const SearchForm = () => {
   const searchId = useId();
@@ -11,9 +12,9 @@ const SearchForm = () => {
   };
   const value = useSelector(state => state.filters);
   return (
-    <div>
-      <label htmlFor={searchId}>Filter</label>
-      <input
+    <div className={css.searchForm}>
+      <label htmlFor={searchId} className={css.searchLabel}>Filter</label>
+      <input className={css.searchInput}
         type="text"
         name="search"
         id={searchId}

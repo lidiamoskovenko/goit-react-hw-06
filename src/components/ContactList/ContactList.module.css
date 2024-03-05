@@ -1,0 +1,11 @@
+.contactList {
+  width: 50%;
+  display: flex;
+  gap: 15px;
+    list-style: none;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(35, 0, 115, 0.1);
+
+  }
